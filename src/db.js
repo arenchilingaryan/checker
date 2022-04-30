@@ -1,12 +1,12 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBnvAa5Of-ub3xs5_GNf_qtwmX_12ESvPs",
-    authDomain: "checker-a4855.firebaseapp.com",
-    projectId: "checker-a4855",
-    storageBucket: "checker-a4855.appspot.com",
-    messagingSenderId: "362894472332",
-    appId: "1:362894472332:web:63086442149ca09c8637a9"
+    apiKey: process.env.REACT_APP_DB_API_KEY,
+    authDomain: process.env.REACT_APP_DB_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_DB_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_DB_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_DB_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_DB_APP_ID
 };
 
 export const firebaseApp = firebase.initializeApp(firebaseConfig).firestore()

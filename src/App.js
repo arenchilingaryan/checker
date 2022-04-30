@@ -45,8 +45,6 @@ function App() {
     setIsMount(true)
   }, 5000)
 
-  console.log(counter)
-
   return (
     <div className="App">
       {isMount && <div>Приложение еще не готово. Возвращайся через 3 дня</div>}
