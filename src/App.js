@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="App">
-      {isMount && <div>Твои данные о геолокации в моей базе (впн не поможет)</div>}
+      {isMount && <div>Твои данные геолокации в моей базе (впн не поможет)</div>}
       {!isMount && <>
         <div className="loader">Loading...</div>
         <div className="loading">Loading...</div>
